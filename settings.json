@@ -1,0 +1,66 @@
+{
+  "galaxy.meteor.com": {
+    "env": {
+      "NODE_TLS_REJECT_UNAUTHORIZED": "0",
+      "PRERENDERIO_TOKEN": "",
+      "ROOT_URL": "https://www.localhost.com",
+      "MONGO_URL": "",
+      "MAIL_URL": ""
+    }
+  },
+  "public": {
+    "appVersion": "v3.2.0",
+    "publicUrl": "https://mantisdashboard.io",
+    "VITE_APP_BASE_NAME": "",
+    "appBaseName": "",
+    "apiUrl": "https://mock-data-api-nextjs.vercel.app/",
+    "firebase": {
+      "apiKey": "",
+      "authDomain": "",
+      "projectId": "",
+      "storageBucket": "",
+      "messagingSenderId": "",
+      "appId": "",
+      "measurementId": ""
+    },
+    "aws": {
+      "poolId": "",
+      "appClientId": ""
+    },
+    "auth0": {
+      "clientId": "",
+      "domain": ""
+  },
+    "astronomer": {
+      "appId": "",
+      "disableUserTracking": false,
+      "disableRouteTracking": true,
+      "disableMethodTracking": false
+    },
+    "productName": "BT2",
+    "copyrightStartYear": "2024",
+  },
+  "private": {
+    "OAuth": {
+      "facebook": {
+        "enabled": false,
+        "appId": "",
+        "secret": "",
+        "loginStyle": "popup"
+      },
+      "google": {
+        "enabled": false,
+        "clientId": "",
+        "secret": "",
+        "loginStyle": "popup"
+      },
+      "github": {
+        "enabled": false,
+        "clientId": "",
+        "secret": "",
+        "loginStyle": "popup"
+      }
+    },
+    "supportEmail": ""
+  }
+}

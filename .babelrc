@@ -1,0 +1,25 @@
+{
+  presets: ['meteor'],
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['./'],
+        alias: {
+           'utils': './imports/ui/utils',
+          '@components': './imports/ui/components',
+          'features': './imports/features',
+          'api': './imports/api',
+          'data': './imports/data',
+          'hooks': './imports/hooks',
+          '@menu-items': './imports/menu-items',
+           'routes': './imports/routes',
+          'themes': './imports/themes',
+           'ui': './imports/ui',
+           'imports': './imports',
+          'config': './imports/config'
+        },
+      },
+    ],
+  ],
+}

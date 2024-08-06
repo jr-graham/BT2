@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "baseUrl": "imports"
+  },
+  "include": [
+    "imports/**/*"
+  ],
+  "exclude": ["node_modules"]
+}

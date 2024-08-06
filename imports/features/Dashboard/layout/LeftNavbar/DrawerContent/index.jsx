@@ -1,0 +1,30 @@
+import React from 'react';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import useStore from './../../../../../store/store';
+
+// project import
+import NavUser from './NavUser';
+import NavCard from './NavCard';
+import Navigation from './Navigation';
+import SimpleBar from 'ui/components/third-party/SimpleBar';
+// import { useGetMenuMaster } from '../../../../../api/menu';
+
+// ==============================|| DRAWER CONTENT ||============================== //
+
+export default function DrawerContent() {
+  // const { menuMaster } = useGetMenuMaster();
+  // const drawerOpen = menuMaster.isDashboardDrawerOpened;
+  const { menuMaster } = useStore((state) => ({ menuMaster: state.menuMaster, }));
+  const drawerOpen = menuMaster.isDashboardDrawerOpened;
+  const downLG = useMediaQuery((theme) => theme.breakpoints.down('lg'));
+
+  return (
+    <>
+      <SimpleBar sx={{ '& .simplebar-content': { display: 'flex', flexDirection: 'column' } }}>
+        <Navigation />
+        {/*{drawerOpen && !downLG && <NavCard />}*/}
+      </SimpleBar>
+      <NavUser />
+    </>
+  );
+}
